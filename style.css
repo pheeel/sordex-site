@@ -1,0 +1,79 @@
+:root {
+  --bg: #050708;
+  --panel: #0b1011;
+  --text: #d6e4dc;
+  --muted: #7f9289;
+  --accent: #6fd39a;
+  --rule: #1f2b27;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+header { margin-bottom: 40px; }
+
+.wordmark {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 28px;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+}
+
+nav { margin-top: 12px; color: var(--muted); }
+nav a { margin-right: 16px; }
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 36px 0 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+h2::before { content: ">_ "; color: var(--muted); }
+
+p, li { color: var(--text); }
+ul { padding-left: 20px; }
+.meta { color: var(--muted); margin: 0 0 24px; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 14px;
+}
